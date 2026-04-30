@@ -1,0 +1,29 @@
+{
+  "name": "purecontext-tts",
+  "version": "0.1.0",
+  "description": "Local text-to-speech MCP server using Kokoro-82M",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "download-model": "node dist/download-model.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "kokoro-js": "^1.2.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "typescript": "^5.7.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "onnxruntime-node",
+      "@biomejs/biome"
+    ]
+  }
+}
