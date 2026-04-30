@@ -11,7 +11,7 @@
     "download-model": "node dist/download-model.js"
   },
   "dependencies": {
-    "@huggingface/transformers": "^4.2.0",
+    "@huggingface/transformers": "^3.8.1",
     "@modelcontextprotocol/sdk": "^1.27.0",
     "kokoro-js": "^1.2.1",
     "zod": "^4.0.0"
