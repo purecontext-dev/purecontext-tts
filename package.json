@@ -8,11 +8,14 @@
     "build": "tsc",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "download-model": "node dist/download-model.js"
+    "download-model": "node dist/download-model.js",
+    "serve": "node dist/standalone.js"
   },
   "dependencies": {
+    "@hono/node-server": "^2.0.2",
     "@huggingface/transformers": "^3.8.1",
     "@modelcontextprotocol/sdk": "^1.27.0",
+    "hono": "^4.12.18",
     "kokoro-js": "^1.2.1",
     "zod": "^4.0.0"
   },
